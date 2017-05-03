@@ -19,7 +19,6 @@ def run(filename):
         print "Parsing failed."
         return
 
-    ident(tmp)
     stack = [ [x[:] for x in tmp] ]
     screen = new_screen()
     tmp = []
