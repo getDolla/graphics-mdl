@@ -68,9 +68,8 @@ def run(filename):
                       float(command[7]), float(command[8]),
                       step, command[0])
 
-        elif command[0] == 'command[0]':
+        elif command[0] == 'line':
             #print 'command[0]\t' + str(args)
-
             add_edge( edges,
                       float(command[1]), float(command[2]), float(command[3]),
                       float(command[4]), float(command[5]), float(command[6]) )
