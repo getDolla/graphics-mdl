@@ -21,7 +21,6 @@ def run(filename):
 
     stack = [ [x[:] for x in tmp] ]
     screen = new_screen()
-    tmp = []
     edges = []
     step = 0.1
     for command in commands:
