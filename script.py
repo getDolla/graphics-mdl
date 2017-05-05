@@ -7,7 +7,7 @@ def run(filename):
     """
     This function runs an mdl script
     """
-    color = [255, 255, 255]
+    color = [0, 0, 0]
     tmp = new_matrix()
     ident( tmp )
 
@@ -77,13 +77,13 @@ def run(filename):
             #print 'SCALE\t' + str(args)
             t = make_scale(float(command[1]), float(command[2]), float(command[3]))
             matrix_mult( stack[-1], t )
-            stack[-1] = [ x[:] for x in t]
+            stack[-1] = [ x[:] for x in t ]
 
         elif command[0] == 'move':
             #print 'MOVE\t' + str(args)
             t = make_translate(float(command[1]), float(command[2]), float(command[3]))
             matrix_mult( stack[-1], t )
-            stack[-1] = [ x[:] for x in t]
+            stack[-1] = [ x[:] for x in t ]
 
 
         elif command[0] == 'rotate':
@@ -97,7 +97,7 @@ def run(filename):
             else:
                 t = make_rotZ(theta)
             matrix_mult( stack[-1], t )
-            stack[-1] = [ x[:] for x in t]
+            stack[-1] = [ x[:] for x in t ]
 
         elif command[0] == 'clear':
             edges = []
