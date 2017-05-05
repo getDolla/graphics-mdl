@@ -24,7 +24,7 @@ def run(filename):
     edges = []
     step = 0.1
     for command in commands:
-        print command
+        #print command
         if command[0] == 'sphere':
             #print 'SPHERE\t' + str(args)
             add_sphere(edges,
